@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddModdedToVersionString", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisableTracking", "DisableTracking\DisableTracking.csproj", "{425F5C84-F38C-4EE4-A769-968B30D072DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildlifeBegone", "WildlifeBegone\WildlifeBegone.csproj", "{C242B863-2595-4442-9933-7AA73550806E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{425F5C84-F38C-4EE4-A769-968B30D072DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{425F5C84-F38C-4EE4-A769-968B30D072DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{425F5C84-F38C-4EE4-A769-968B30D072DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C242B863-2595-4442-9933-7AA73550806E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C242B863-2595-4442-9933-7AA73550806E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C242B863-2595-4442-9933-7AA73550806E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C242B863-2595-4442-9933-7AA73550806E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
