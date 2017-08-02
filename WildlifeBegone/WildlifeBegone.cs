@@ -7,12 +7,18 @@ class SpawnRegionPatch
 {
 	static void Prefix(SpawnRegion __instance)
 	{
+		if (GameManager.IsStoryMode()) return;
+
 		bool m_StartHasBeenCalled = (bool) AccessTools.Field(typeof(SpawnRegion), "m_StartHasBeenCalled").GetValue(__instance);
 		if (m_StartHasBeenCalled) return;
 
 		if (__instance.m_SpawnablePrefab.name.ToLowerInvariant().Contains("wolf"))
 		{
 			AdjustRegion(__instance, 0.1f, 0.1f, 0.7f);
+		}
+		else if (__instance.m_SpawnablePrefab.name.ToLowerInvariant().Contains("rabbit"))
+		{
+			AdjustRegion(__instance, 0.5f, 0.4f, 0.9f);
 		}
 		else
 		{
@@ -56,6 +62,8 @@ class RandomSpawnObjectPatch
 {
 	static void Prefix(RandomSpawnObject __instance)
 	{
+		if (GameManager.IsStoryMode()) return;
+
 		if (__instance.m_RerollAfterGameHours > 0.0)
 		{
 			float oldRerollTime = __instance.m_RerollAfterGameHours;
