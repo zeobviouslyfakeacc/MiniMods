@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RememberBreakDownItem", "RememberBreakDownItem\RememberBreakDownItem.csproj", "{36E8BDAF-A46D-4729-B60D-F42190A089DC}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildlifeBegone", "WildlifeBegone\WildlifeBegone.csproj", "{C242B863-2595-4442-9933-7AA73550806E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisableBreathEffect", "DisableBreathEffect\DisableBreathEffect.csproj", "{767D39F3-38D3-4623-86D8-DD38E9DEF6DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnableStatusBarPercentages", "EnableStatusBarPercentages\EnableStatusBarPercentages.csproj", "{876816F7-5100-496A-AFE0-A46A65606481}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,8 +41,15 @@ Global
 		{767D39F3-38D3-4623-86D8-DD38E9DEF6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{767D39F3-38D3-4623-86D8-DD38E9DEF6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{767D39F3-38D3-4623-86D8-DD38E9DEF6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{876816F7-5100-496A-AFE0-A46A65606481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{876816F7-5100-496A-AFE0-A46A65606481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{876816F7-5100-496A-AFE0-A46A65606481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{876816F7-5100-496A-AFE0-A46A65606481}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26BFC108-4312-403A-9D90-4610892339F2}
 	EndGlobalSection
 EndGlobal
