@@ -1,0 +1,39 @@
+{
+	"Logging": false,
+	"SpawnerGroups": {
+		"RerollActiveSpawnersTimeMultiplier": 2.0,
+		"ActiveSpawnerCountMultiplier": 0.4
+	},
+	"SpawnRates": {
+		"None": {
+			"SpawnRegionActiveTimeMultiplier": 1.0,
+			"MaximumRespawnsPerDayMultiplier": 1.0,
+			"MaximumSpawnedAnimalsMultiplier": 1.0
+		},
+		"Wolf": {
+			"SpawnRegionActiveTimeMultiplier": 0.1,
+			"MaximumRespawnsPerDayMultiplier": 0.1,
+			"MaximumSpawnedAnimalsMultiplier": 0.5
+		},
+		"Bear": {
+			"SpawnRegionActiveTimeMultiplier": 0.1,
+			"MaximumRespawnsPerDayMultiplier": 0.2,
+			"MaximumSpawnedAnimalsMultiplier": 1.0
+		},
+		"Stag": {
+			"SpawnRegionActiveTimeMultiplier": 0.1,
+			"MaximumRespawnsPerDayMultiplier": 0.2,
+			"MaximumSpawnedAnimalsMultiplier": 0.7
+		},
+		"Rabbit": {
+			"SpawnRegionActiveTimeMultiplier": 0.4,
+			"MaximumRespawnsPerDayMultiplier": 0.4,
+			"MaximumSpawnedAnimalsMultiplier": 0.7
+		},
+		"Moose": {
+			"SpawnRegionActiveTimeMultiplier": 1.0,
+			"MaximumRespawnsPerDayMultiplier": 0.4,
+			"MaximumSpawnedAnimalsMultiplier": 1.0
+		}
+	}
+}
