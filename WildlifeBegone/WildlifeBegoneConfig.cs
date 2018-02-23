@@ -7,7 +7,13 @@ namespace WildlifeBegone {
 	internal class WildlifeBegoneConfig {
 
 		internal static WildlifeBegoneConfig Parse(string json) {
-			ConfigProxy proxy = JsonConvert.DeserializeObject<ConfigProxy>(json);
+			JsonSerializerSettings settings = new JsonSerializerSettings();
+			settings.Error += (_, args) => {
+				string errorMessagge = args.ErrorContext.Error.Message;
+				Debug.LogError("[WildlifeBegone] Couldn't parse the configuration JSON string. Error:\n" + errorMessagge);
+			};
+
+			ConfigProxy proxy = JsonConvert.DeserializeObject<ConfigProxy>(json, settings);
 			return new WildlifeBegoneConfig(proxy);
 		}
 
@@ -22,6 +28,11 @@ namespace WildlifeBegone {
 			if (rsoSettings == null) {
 				Debug.LogError("[WildlifeBegone] Couldn't load the \"SpawnerGroups\" configuration entry, not modifying group spawns.");
 				rsoSettings = new RSOSettings();
+			}
+
+			if (proxy.SpawnRates == null) {
+				Debug.LogError("[WildlifeBegone] Couldn't load the \"SpawnRates\" configuration entry, not modifying spawn settings.");
+				proxy.SpawnRates = new Dictionary<string, SpawnRateSetting>();
 			}
 
 			Array values = Enum.GetValues(typeof(AiSubType));
@@ -42,20 +53,20 @@ namespace WildlifeBegone {
 		}
 
 		private class ConfigProxy {
-			internal bool Logging = false;
-			internal RSOSettings SpawnerGroups = null;
-			internal Dictionary<string, SpawnRateSetting> SpawnRates = null;
+			public bool Logging = false;
+			public RSOSettings SpawnerGroups = null;
+			public Dictionary<string, SpawnRateSetting> SpawnRates = null;
 		}
 	}
 
 	internal class RSOSettings {
-		internal float RerollActiveSpawnersTimeMultiplier = 1.0f;
-		internal float ActiveSpawnerCountMultiplier = 1.0f;
+		public float RerollActiveSpawnersTimeMultiplier = 1.0f;
+		public float ActiveSpawnerCountMultiplier = 1.0f;
 	}
 
 	internal class SpawnRateSetting {
-		internal float SpawnRegionActiveTimeMultiplier = 1.0f;
-		internal float MaximumRespawnsPerDayMultiplier = 1.0f;
-		internal float MaximumSpawnedAnimalsMultiplier = 1.0f;
+		public float SpawnRegionActiveTimeMultiplier = 1.0f;
+		public float MaximumRespawnsPerDayMultiplier = 1.0f;
+		public float MaximumSpawnedAnimalsMultiplier = 1.0f;
 	}
 }
