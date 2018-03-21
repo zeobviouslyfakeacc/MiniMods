@@ -4,6 +4,10 @@ This repository contains a few (in my opinion) useful mods that only consist of 
 
 Here's a short overview of what they do:
 
+### DisableBreathEffect
+
+Removes the annoying 2D breath cloud that appears every few seconds when it's cold.
+
 ### RememberBreakDownItem
 
 This mod remembers the tool you last used to break down furniture. That way, you no longer need to constantly switch from "using a knife" to "no tool" when breaking down branches or curtains.
@@ -23,9 +27,16 @@ This mod removes most of the animals that would usually roam the world and great
 One can no longer set up a base in one spot and stay self-sufficient by hunting the same animals from the same spawn points over and over again.
 Instead, one now needs to become a pilgrim that moves between the various regions, hunting for food.
 
+## Old & disused mods
+
 ### DisableTracking
 
-_The Long Dark_ sends analytics data to a 3rd-party service called [GameAnalytics](https://gameanalytics.com/), even though the game never informs you about this.
+_The Long Dark_ used to send analytics data to a 3rd-party service called [GameAnalytics](https://gameanalytics.com/), even though the game never informs you about this.
+
+In the v1.27 update, these tracking functions were replaced with empty functions.
+In other words, this mod currently isn't needed anymore, but the developers might add new tracking functions in the future.
+
+---
 
 The data collected is rather trivial:
 - Places you've visited
@@ -47,15 +58,6 @@ and offered to add a setting to opt-out of these analytics.
 However, after more than a year, neither has been implemented.
 
 Instead, I made my own opt-out switch, in form of a mod.
-
-### DisableBreathEffect
-
-Removes the annoying 2D breath cloud that appears every few seconds when it's cold.
-
-This mod used to be more useful in older TLD versions where the breath cloud was almost solid white,
-even when the player was in a pitch black room.
-This made it hard to see items in the dark and was very annoying in general,
-which is why I made this mod to remove the ~~vape cloud~~ breath effect.
 
 ### AddModdedToVersionString
 
