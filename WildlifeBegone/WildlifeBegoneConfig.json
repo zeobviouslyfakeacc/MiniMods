@@ -16,7 +16,7 @@
 			"MaximumSpawnedAnimalsMultiplier": 0.5
 		},
 		"Bear": {
-			"SpawnRegionActiveTimeMultiplier": 0.1,
+			"SpawnRegionActiveTimeMultiplier": 0.3,
 			"MaximumRespawnsPerDayMultiplier": 0.2,
 			"MaximumSpawnedAnimalsMultiplier": 1.0
 		},
