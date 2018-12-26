@@ -1,5 +1,17 @@
 # MiniMods for _The Long Dark_
 
+## \<Archived\>
+
+This repository has been **archived** because using one repo for several different mods is a really bad idea.
+
+The mods previously tracked in this repo now have their own repositories:
+- [**DisableBreathEffect**](https://github.com/zeobviouslyfakeacc/DisableBreathEffect)
+- [**EnableStatusBarPercentages**](https://github.com/zeobviouslyfakeacc/EnableStatusBarPercentages)
+- [**RememberBreakDownItem**](https://github.com/zeobviouslyfakeacc/RememberBreakDownItem)
+- [**WildlifeBegone**](https://github.com/zeobviouslyfakeacc/WildlifeBegone)
+
+## \</Archived\>
+
 This repository contains a few (in my opinion) useful mods that only consist of a few lines of code each.
 
 Here's a short overview of what they do:
